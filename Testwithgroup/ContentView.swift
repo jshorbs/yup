@@ -13,7 +13,7 @@ struct ContentView: View {
             
             VStack {
                 NavigationLink(destination: SuggestionMainPage()) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                    Text("Suggestions")
                 }
                 
             }

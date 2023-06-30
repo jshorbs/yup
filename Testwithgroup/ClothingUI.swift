@@ -39,6 +39,7 @@ struct ClothingUI: View {
         ZStack{
             Rectangle()
                 .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
+                .frame(width: 700.0, height: 900.0)
             
             
             VStack(alignment: .center){

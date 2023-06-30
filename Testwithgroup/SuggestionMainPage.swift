@@ -13,6 +13,7 @@ struct SuggestionMainPage: View {
             ZStack{
                 Rectangle()
                     .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
+                    .frame(width: /*@START_MENU_TOKEN@*/500.0, height: 999.0/*@END_MENU_TOKEN@*/)
                 VStack {
                     
                         NavigationLink(destination: ClothingUI()) {

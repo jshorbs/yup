@@ -19,7 +19,7 @@ func checkWeather(Weather:Int)->Int{
     }
     return Indicator
 }
-public var CurrentWeather=73
+public var CurrentWeather=81
 struct ClothingUI: View {
     
     @State private var clothingtype=""

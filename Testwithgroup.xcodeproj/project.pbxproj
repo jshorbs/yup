@@ -14,6 +14,7 @@
 		0379111A2A4DDE2C00058EFB /* SuggestionMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037911192A4DDE2C00058EFB /* SuggestionMainPage.swift */; };
 		0379111C2A4DDE6F00058EFB /* ClothingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0379111B2A4DDE6F00058EFB /* ClothingUI.swift */; };
 		0379111E2A4DDED800058EFB /* ActivitiesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0379111D2A4DDED800058EFB /* ActivitiesUI.swift */; };
+		BDAE3EB92A4F21F000AACD2E /* WeatherUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE3EB82A4F21F000AACD2E /* WeatherUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		037911192A4DDE2C00058EFB /* SuggestionMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionMainPage.swift; sourceTree = "<group>"; };
 		0379111B2A4DDE6F00058EFB /* ClothingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingUI.swift; sourceTree = "<group>"; };
 		0379111D2A4DDED800058EFB /* ActivitiesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesUI.swift; sourceTree = "<group>"; };
+		BDAE3EB82A4F21F000AACD2E /* WeatherUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				033A89992A4B6206007E6AA3 /* TestwithgroupApp.swift */,
 				033A899B2A4B6206007E6AA3 /* ContentView.swift */,
+				BDAE3EB82A4F21F000AACD2E /* WeatherUI.swift */,
 				037911192A4DDE2C00058EFB /* SuggestionMainPage.swift */,
 				0379111D2A4DDED800058EFB /* ActivitiesUI.swift */,
 				0379111B2A4DDE6F00058EFB /* ClothingUI.swift */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAE3EB92A4F21F000AACD2E /* WeatherUI.swift in Sources */,
 				0379111A2A4DDE2C00058EFB /* SuggestionMainPage.swift in Sources */,
 				0379111C2A4DDE6F00058EFB /* ClothingUI.swift in Sources */,
 				033A899C2A4B6206007E6AA3 /* ContentView.swift in Sources */,

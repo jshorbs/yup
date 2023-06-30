@@ -6,6 +6,19 @@
 //
 
 import SwiftUI
+func checkWeather(Temp:Int)->String{
+    var Wcheck = ""
+    if Temp<45{
+     Wcheck="Cold"
+    }
+    else if Temp>=45 && Temp<75{
+      Wcheck="Medium"
+    }
+    else{
+    Wcheck="Hot"
+    }
+    return Wcheck
+}
 
 struct ActivitiesUI: View {
     var ActivityNameONE=["Beach","Hike","Movie Night"]
@@ -14,7 +27,7 @@ struct ActivitiesUI: View {
     var ActivityDescriptionTWO=["Todays a good day to be close to the water","Grab your closest friends and some cheese! today we're going outside!","Lets Get Creative!"]
     var ActivityNameTHREE=["Drive in","IDK WHAT TO PUT HERE","Bake"]
     var ActivityDescriptionTHREE=["out door movie theaters are so cool!","IDKMAN","nothing better than freshly baked treats when its cold outside!"]
-    var Weather="Cold"
+    var Weather=checkWeather(Temp:CurrentWeather)
     var body: some View {
         ZStack{
             Rectangle()

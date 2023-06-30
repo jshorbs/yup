@@ -6,7 +6,20 @@
 //
 
 import SwiftUI
-
+func checkWeather(Weather:Int)->Int{
+    var Indicator = 0
+    if Weather<45{
+    Indicator=0
+    }
+    else if Weather>=45 && Weather<75{
+      Indicator=1
+    }
+    else{
+        Indicator=2
+    }
+    return Indicator
+}
+public var CurrentWeather=73
 struct ClothingUI: View {
     
     @State private var clothingtype=""
@@ -20,8 +33,7 @@ struct ClothingUI: View {
     @State private var Shoes=["Winter boots are INN, Uggs, docs, timberlanes, you name it, if theyre nice and warm theyre totally in style","Sneakers will get you anywhere today, the weathers nice so you could definitly take a little stroll","nobody likes sweaty socks, maybe throw on some crocs, slides, or sandals."]
     
     //sorting through arrays
-    @State private var CurrentWeatherIndicator=2
-    @State private var CurrentWeather=73
+    var WIndicator=checkWeather(Weather:CurrentWeather)
     
     var body: some View {
         ZStack{
@@ -34,7 +46,7 @@ struct ClothingUI: View {
                     RoundedRectangle(cornerRadius: 35)
                         .foregroundColor(Color(red: 0.07058823529411765, green: 0.14901960784313725, blue: 0.22745098039215686))
                     if clothingtype=="hat"{
-                        Text(Hats[CurrentWeatherIndicator])
+                        Text(Hats[WIndicator])
                             .font(.headline)
                             .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
                             .multilineTextAlignment(.center)
@@ -42,28 +54,28 @@ struct ClothingUI: View {
                     }
                     
                     else if clothingtype=="jacket"{
-                        Text(Jackets[CurrentWeatherIndicator])
+                        Text(Jackets[WIndicator])
                             .font(.headline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
                     }
                     
                     else if clothingtype=="top"{
-                        Text(Tops[CurrentWeatherIndicator])
+                        Text(Tops[WIndicator])
                             .font(.headline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
                     }
                     
                     else if clothingtype=="bottom"{
-                        Text(Bottoms[CurrentWeatherIndicator])
+                        Text(Bottoms[WIndicator])
                             .font(.headline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
                     }
                     
                     else if clothingtype=="shoes"{
-                        Text(Shoes[CurrentWeatherIndicator])
+                        Text(Shoes[WIndicator])
                             .font(.headline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.9568627450980393, green: 0.9294117647058824, blue: 0.9176470588235294))
